@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glass-div">
+    <h1>Weather App</h1>
+    <div id="weatherButtons">
+      <button id="rainButton">Rain</button>
+      <button id="sunButton">Sun</button>
+    </div>
+    <input type="text" id="locationInput" placeholder="Enter city name">
+    <button id="searchButton">Search</button>
+    <div id="weatherInfo">
+      <p id="temperature">Temperature: --°C</p>
+      <p id="condition">Condition: --</p>
+    </div>
+  </div>
+  <canvas id="weatherCanvas"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>

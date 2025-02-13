@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+  
+  .glass-div {
+    width: 50vw;
+    height: 50vh;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+  }
+  
+  #weatherButtons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #rainButton,
+  #sunButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #rainButton:hover,
+  #sunButton:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  #locationInput {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    margin-bottom: 10px;
+    width: 80%;
+  }
+  
+  #searchButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #searchButton:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  #weatherInfo {
+    margin-top: 20px;
+  }
+  
+  #weatherCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
